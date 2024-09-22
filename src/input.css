@@ -4,15 +4,15 @@
 
 @layer base{
   body {
-    @apply font-lato 
+    @apply font-lato;
   }
 }
 .contain1 {
-  @apply container mx-auto bg-black flex-row w-[90%] h-[400px] mt-[100px] pt-8 min-h-32 rounded-[14px] z-0 overflow-hidden border border-[#1AB6B9] shadow-custom;
+  @apply m-0 bg-black flex-row w-auto h-[400px] min-h-32 rounded-[14px] z-0 overflow-hidden border border-[#1AB6B9] shadow-custom mx-4 pt-6 mb-[20px];
 }
 
 .box-text {
-  @apply  text-[#1AB6B9] font-[600] text-[28px] bg-[#292929] ml-[40px] p-1 px-2.5 rounded-[8px];
+  @apply  text-[#1AB6B9] font-[600] text-[20px] bg-[#292929] ml-[40px] p-1 px-2.5 rounded-[8px];
 }
 
 .details {
@@ -23,16 +23,27 @@
   @apply  text-[#ffffff] font-[450] text-[42px] ml-[40px] rounded-[8px];
 }
 
+
+.btn {
+  @apply font-[600] text-[21px] rounded-[13px] w-auto h-[70px] shadow-custom hover:shadow-hover m-5 overflow-hidden;
+}
+
 .add {
-  @apply  text-[#00FFA3CC] font-[600] text-[28px] rounded-[8px] w-auto h-[100px] shadow-custom m-5 border border-[#07DB8F] bg-[#03F89F26];
+  @apply  text-[#00FFA3CC] bg-[#03F89F26] outline outline-[#5f5f5f] outline-offset-2 outline-2 hover:outline-[#07db8d9d];
 }
 
 .show {
-  @apply  text-[#1AB6B9] font-[600] text-[28px] rounded-[8px] w-auto h-[100px] shadow-custom m-5 col-span-2 border border-[#1AB6B9] bg-black;
+  @apply  text-[#bebebe]  col-span-1 outline outline-[#5f5f5f] outline-offset-2 outline-2 hover:outline-[#bebebe98] bg-transparent
 }
 
 .budget {
-  @apply  text-[#FFB800] font-[600] text-[28px] rounded-[8px] w-auto h-[100px] shadow-custom m-5 col-span-3 border border-[#FFB800] bg-[#F1C40F26];
+  @apply  text-[#FFB800]  col-span-2 outline outline-[#5f5f5f] outline-offset-2 outline-2 hover:outline-[#ffb700ab] bg-[#F1C40F26];
 }
+
+
+.god-container {
+  @apply  flex overflow-y-scroll h-screen;
+}
+
 
 
