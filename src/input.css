@@ -4,7 +4,7 @@
 
 @layer base{
   body {
-    @apply font-lato md:scale-75;
+    @apply font-lato;
   }
 }
 .contain1 {
@@ -12,7 +12,7 @@
 }
 
 .box-text {
-  @apply  text-[#1AB6B9] font-[600] text-[28px] bg-[#292929] ml-[40px] p-1 px-2.5 rounded-[8px];
+  @apply  text-[#1AB6B9] font-[600] text-[20px] bg-[#292929] ml-[40px] p-1 px-2.5 rounded-[8px];
 }
 
 .details {
@@ -25,19 +25,25 @@
 
 
 .btn {
-  @apply font-[600] text-[28px] rounded-[15px] w-auto h-[100px] shadow-custom m-5 overflow-hidden;
+  @apply font-[600] text-[21px] rounded-[13px] w-auto h-[70px] shadow-custom hover:shadow-hover m-5 overflow-hidden;
 }
 
 .add {
-  @apply  text-[#00FFA3CC]  border hover:border-[#07DB8F] bg-[#03F89F26];
+  @apply  text-[#00FFA3CC] bg-[#03F89F26] outline outline-[#5f5f5f] outline-offset-2 outline-2 hover:outline-[#07db8d9d];
 }
 
 .show {
-  @apply  text-[#1AB6B9]  col-span-1 border hover:border-[#1AB6B9] bg-black;
+  @apply  text-[#bebebe]  col-span-1 outline outline-[#5f5f5f] outline-offset-2 outline-2 hover:outline-[#bebebe98] bg-transparent
 }
 
 .budget {
-  @apply  text-[#FFB800]  col-span-2 border hover:border-[#FFB800] bg-[#F1C40F26];
+  @apply  text-[#FFB800]  col-span-2 outline outline-[#5f5f5f] outline-offset-2 outline-2 hover:outline-[#ffb700ab] bg-[#F1C40F26];
 }
+
+
+.god-container {
+  @apply  flex overflow-y-scroll h-screen;
+}
+
 
 
